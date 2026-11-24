@@ -1,0 +1,6 @@
+{
+  "name": "StaffLog",
+  "description": "StaffLog – Simplifying Employee Management Through Smart Attendance",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

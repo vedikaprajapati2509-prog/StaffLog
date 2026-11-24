@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StaffLog – Simplifying Employee Management Through Smart Attendance</title>
+    <meta
+      name="description"
+      content="StaffLog – Simplifying Employee Management Through Smart Attendance"
+    />
+    <meta property="og:title" content="StaffLog" />
+    <meta
+      property="og:description"
+      content="StaffLog – Simplifying Employee Management Through Smart Attendance"
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/static/css/style.css" />
+    <link rel="stylesheet" href="/static/css/responsive.css" />
+  </head>
+  <body class="login-body">
+    <div id="preview-banner" class="preview-banner hidden" role="status">
+      <span id="preview-banner-text">
+        Frontend Design Preview Mode — Static sample data for UI inspection. Run
+        <code>python app.py</code> with MySQL locally for the live backend.
+      </span>
+    </div>
+
+    <main class="login-shell">
+      <section class="login-editorial" aria-label="About StaffLog">
+        <div class="brand-lockup">
+          <div class="brand-mark" aria-hidden="true">SL</div>
+          <span class="brand-name">StaffLog</span>
+        </div>
+        <h1 class="login-headline">
+          Simplifying employee management through smart attendance.
+        </h1>
+        <p class="login-subcopy">
+          Track daily check-ins against configurable shift cutoffs, inspect
+          monthly attendance calendars, manage leave approvals, and export
+          clean monthly CSV reports.
+        </p>
+
+        <div class="login-highlights">
+          <div class="highlight-item">
+            <span class="highlight-title">01. Smart Attendance Timing</span>
+            <span class="highlight-desc">
+              Default 09:30 AM cutoff automatically marks check-ins On Time or
+              Late, configurable by HR.
+            </span>
+          </div>
+          <div class="highlight-item">
+            <span class="highlight-title">02. Three Role Dashboards</span>
+            <span class="highlight-desc">
+              Dedicated workflows for Employees, Team Managers, and HR
+              Administrators.
+            </span>
+          </div>
+          <div class="highlight-item">
+            <span class="highlight-title">03. Monthly Reports &amp; CSV</span>
+            <span class="highlight-desc">
+              Instant absent employee tracking, leave sync, and downloadable
+              monthly attendance reports.
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <section class="login-card" aria-label="Sign in form">
+        <div class="login-card-header">
+          <h2>Sign in to StaffLog</h2>
+          <p>Enter your work email and password to access your workspace.</p>
+        </div>
+
+        <div id="login-error" class="alert alert-error hidden" role="alert"></div>
+
+        <form id="login-form" class="stack-form" novalidate>
+          <div class="form-group">
+            <label for="email">Work Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="name@stafflog.local"
+              autocomplete="email"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Enter your password"
+              autocomplete="current-password"
+              required
+            />
+          </div>
+
+          <button type="submit" id="login-submit-btn" class="btn btn-primary btn-full">
+            Sign In
+          </button>
+        </form>
+
+        <div class="demo-accounts">
+          <div class="demo-header">
+            <span>Quick Demo Accounts</span>
+            <span class="mono-text">Password: Password@123</span>
+          </div>
+          <div class="demo-buttons">
+            <button
+              type="button"
+              class="btn btn-ghost btn-sm demo-fill-btn"
+              data-email="aarav@stafflog.local"
+              data-password="Password@123"
+            >
+              Employee
+            </button>
+            <button
+              type="button"
+              class="btn btn-ghost btn-sm demo-fill-btn"
+              data-email="manager.eng@stafflog.local"
+              data-password="Password@123"
+            >
+              Team Manager
+            </button>
+            <button
+              type="button"
+              class="btn btn-ghost btn-sm demo-fill-btn"
+              data-email="hr@stafflog.local"
+              data-password="Password@123"
+            >
+              HR Admin
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="/static/js/preview_adapter.js"></script>
+    <script src="/static/js/api.js"></script>
+    <script src="/static/js/auth.js"></script>
+  </body>
+</html>
+
